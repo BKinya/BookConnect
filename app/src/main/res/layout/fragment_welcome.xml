@@ -1,14 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".WelcomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/header_txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding"
+            android:text="@string/app_name"
+            android:textColor="@color/light_blue"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/find_book_txtview"
+            style="@style/text_style_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_book"
+            android:text="@string/find_a_book"
+            app:layout_constraintEnd_toEndOf="@+id/header_txtview"
+            app:layout_constraintStart_toStartOf="@+id/header_txtview"
+            app:layout_constraintTop_toBottomOf="@+id/header_txtview" />
+
+        <TextView
+            android:id="@+id/find_books_author_txtview"
+            style="@style/text_style_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_library_books"
+            android:text="@string/find_books_by_an_author"
+            app:layout_constraintEnd_toEndOf="@+id/find_book_txtview"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="@+id/find_book_txtview"
+            app:layout_constraintTop_toBottomOf="@+id/find_book_txtview" />
+
+        <TextView
+            android:id="@+id/find_series_author"
+            style="@style/text_style_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_library_books"
+            android:text="@string/find_a_series_by_an_author"
+            app:layout_constraintEnd_toEndOf="@+id/find_books_author_txtview"
+            app:layout_constraintStart_toStartOf="@+id/find_books_author_txtview"
+            app:layout_constraintTop_toBottomOf="@+id/find_books_author_txtview" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/text_style_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_author"
+            android:text="@string/read_about_an_author"
+            app:layout_constraintEnd_toEndOf="@+id/find_series_author"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/find_series_author"
+            app:layout_constraintTop_toBottomOf="@+id/find_series_author" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/next_txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="bottom|end"
+        android:padding="16dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 </FrameLayout>
+
+
+
+
