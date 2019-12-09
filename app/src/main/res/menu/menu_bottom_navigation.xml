@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/booksFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_library_books"
+        android:title="Books"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/seriesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_library_books"
+        android:title="Series"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/authorFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_author"
+        android:title="Author"
+        app:showAsAction="ifRoom" />
+</menu>
