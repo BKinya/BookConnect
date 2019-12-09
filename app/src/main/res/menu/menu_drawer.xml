@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_author"
+            android:title="@string/read_about_an_author" />
+        <item android:id="@+id/nav_find_author"
+            android:icon="@drawable/ic_author"
+            android:title="@string/read_about_an_author" />
+        <item android:id="@+id/nav_find_books_author"
+            android:icon="@drawable/ic_library_books"
+            android:title="@string/find_books_by_an_author" />
+        <item android:id="@+id/nav_find_series_author"
+            android:icon="@drawable/ic_library_books"
+            android:title="@string/find_a_series_by_an_author" />
+    </group>
+
+
+</menu>

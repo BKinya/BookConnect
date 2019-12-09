@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">BookFinder</string>
+    <string name="app_name">BookConnect</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+    <string name="find_a_book">Find a book</string>
+    <string name="find_books_by_an_author">Find books by an author</string>
+    <string name="find_a_series_by_an_author">Find series by an author</string>
+    <string name="read_about_an_author">Find an author</string>
 </resources>
