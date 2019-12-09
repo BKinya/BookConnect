@@ -4,32 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/welcomeFragment">
-
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.beatrice.bookfinder.WelcomeFragment"
-        android:label="fragment_welcome1"
+        android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
-            android:id="@+id/action_welcomeFragment_to_bookListFragment"
-            app:destination="@id/bookListFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            android:id="@+id/action_welcomeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/bookListFragment"
-        android:name="com.beatrice.bookfinder.BookListFragment"
-        android:label="fragment_book_list"
-        tools:layout="@layout/fragment_book_list" >
-        <action
-            android:id="@+id/action_bookListFragment_to_bookDetailFragment"
-            app:destination="@id/bookDetailFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/bookDetailFragment"
-        android:name="com.beatrice.bookfinder.BookDetailFragment"
-        android:label="fragment_book_detail2"
-        tools:layout="@layout/fragment_book_detail" />
+        android:id="@+id/mainFragment"
+        android:name="com.beatrice.bookfinder.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 </navigation>

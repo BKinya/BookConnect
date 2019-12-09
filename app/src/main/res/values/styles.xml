@@ -9,6 +9,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="text_style_welcome">
         <item name="android:padding">@dimen/text_padding</item>
         <item name="android:drawablePadding">8dp</item>
@@ -17,9 +18,14 @@
     </style>
 
     <!-- Theme for toolbar -->
-    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.DarkActionBar" />
     <!-- Theme for toolbar popup menu -->
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
 
 </resources>
