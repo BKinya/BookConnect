@@ -29,7 +29,7 @@ public class WelcomeFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_welcome, container, false);
 
         rootView.findViewById(R.id.next_txtview).setOnClickListener(
-                Navigation.createNavigateOnClickListener(R.id.action_welcomeFragment_to_mainFragment, null)
+                Navigation.createNavigateOnClickListener(R.id.action_welcomeFragment_to_mainFragment)
         );
         return  rootView;
     }

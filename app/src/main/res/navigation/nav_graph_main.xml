@@ -8,21 +8,21 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.beatrice.bookfinder.HomeFragment"
-        android:label="fragment_home"
+        android:label="@string/home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/booksFragment"
         android:name="com.beatrice.bookfinder.BooksFragment"
-        android:label="fragment_books"
+        android:label="@string/books_author"
         tools:layout="@layout/fragment_books" />
     <fragment
         android:id="@+id/seriesFragment"
         android:name="com.beatrice.bookfinder.SeriesFragment"
-        android:label="fragment_series"
+        android:label="@string/series_author"
         tools:layout="@layout/fragment_series" />
     <fragment
         android:id="@+id/authorFragment"
         android:name="com.beatrice.bookfinder.AuthorFragment"
-        android:label="fragment_author"
+        android:label="@string/author"
         tools:layout="@layout/fragment_author" />
 </navigation>
