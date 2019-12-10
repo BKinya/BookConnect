@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/white"
     tools:context=".WelcomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_vertical_margin">
+        android:layout_gravity="center_vertical">
 
         <TextView
-            android:id="@+id/header_txtview"
+            android:id="@+id/welcome_txtview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/text_padding"
-            android:text="@string/app_name"
-            android:textColor="@color/light_blue"
+            android:text="Welcome Beatrice"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="28sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +36,9 @@
             android:layout_marginTop="16dp"
             android:drawableStart="@drawable/ic_book"
             android:text="@string/find_a_book"
-            app:layout_constraintEnd_toEndOf="@+id/header_txtview"
-            app:layout_constraintStart_toStartOf="@+id/header_txtview"
-            app:layout_constraintTop_toBottomOf="@+id/header_txtview" />
+            app:layout_constraintEnd_toEndOf="@+id/welcome_txtview"
+            app:layout_constraintStart_toStartOf="@+id/welcome_txtview"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_txtview" />
 
         <TextView
             android:id="@+id/find_books_author_txtview"
@@ -81,19 +80,21 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/next_txtview"
+        android:id="@+id/next_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:background="@color/colorPrimaryDark"
+        android:background="#E1F5FE"
         android:clickable="true"
         android:focusable="true"
         android:gravity="bottom|end"
         android:padding="16dp"
         android:text="@string/next"
-        android:textColor="@color/white"
+        android:textColor="@color/colorPrimaryDark"
+
         android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textStyle="normal"
+        />
 
 </FrameLayout>
 
