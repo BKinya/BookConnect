@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BookConnect</string>
+    <string name="app_name">BookFinder</string>
 
     <string name="next">Next</string>
     <string name="find_a_book">Find a book</string>
@@ -22,9 +22,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="username_edittxt">Username</string>
+    <string name="username_edittxt">Name</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="what_s_your_name">What\'s your name?</string>
 
 
 </resources>

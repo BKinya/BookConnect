@@ -15,9 +15,11 @@ import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -55,6 +57,13 @@ public class MainFragment extends Fragment {
                 mToolBar.setTitle(destination.getLabel());
             }
         });
+
+        // Bundle b = getArguments();
+//        String name = b.getString("name");
+
+        //replace with safe arguments
+        String name = MainFragmentArgs.fromBundle(getArguments()).getName();
+        Log.e("NAME", name);
 
         return  rootView;
     }

@@ -13,16 +13,13 @@
     android:layout_marginEnd="@dimen/activity_horizontal_margin">
 
     <TextView
-        android:id="@+id/header_txtview"
+        android:id="@+id/name_txtview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/text_padding"
-        android:text="@string/app_name"
+        android:text="@string/what_s_your_name"
         android:textColor="@color/colorPrimary"
-        android:textSize="28sp"
-        android:textStyle="normal"
-        android:gravity="center_horizontal"/>
-
+        android:textSize="22sp"/>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username_textinputlayout"
         android:layout_width="match_parent"
@@ -35,39 +32,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/username_edittxt"
-            android:padding="@dimen/text_padding" />
+            android:padding="@dimen/text_padding"
+            android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_textinputlayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/password_textinputlayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
+<!--        app:passwordToggleEnabled="true">-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password_editxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:padding="@dimen/text_padding" />
-    </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/password_editxt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/password"-->
+<!--            android:padding="@dimen/text_padding"-->
+<!--            android:inputType="textPassword"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
     <Button
         android:id="@+id/login_btn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/login"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
-
-
-
-
-
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="Continue"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:padding="@dimen/text_padding"/>
 
 </LinearLayout>
