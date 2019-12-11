@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/colorPrimaryDark"
     tools:context=".WelcomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/welcome_txtview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:padding="@dimen/text_padding"
             android:text="Welcome Beatrice"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/white"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -80,21 +80,18 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/next_btn"
+        android:id="@+id/next_txtview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:background="#E1F5FE"
         android:clickable="true"
         android:focusable="true"
         android:gravity="bottom|end"
         android:padding="16dp"
         android:text="@string/next"
-        android:textColor="@color/colorPrimaryDark"
-
+        android:textColor="@color/white"
         android:textSize="22sp"
-        android:textStyle="normal"
-        />
+        android:textStyle="normal" />
 
 </FrameLayout>
 
