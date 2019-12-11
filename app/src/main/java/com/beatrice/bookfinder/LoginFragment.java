@@ -35,14 +35,26 @@ public class LoginFragment extends Fragment {
         Button loginBtn = rootView.findViewById(R.id.login_btn);
 
         //add a callback
+        //without using na
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String username = usernameEditTxtview.getText().toString();
                 String password = passwordEditTxtview.getText().toString();
-                if (!TextUtils.isEmpty(username) && !TextUtils.isEmpty(password)){
-                    Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_welcomeFragment);
-                }
+
+                //using bundles to pass arguments
+//                Bundle bundle = new Bundle();
+//                bundle.putString("name", username);
+//                if (!TextUtils.isEmpty(username) && !TextUtils.isEmpty(password)){
+//                    Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_welcomeFragment, bundle);
+//                }
+
+                //use safe plugin to pass arguments between destination
+                //first create an action
+                LoginFragmentDirections.ActionLoginFragmentToWelcomeFragment loginAction =
+                        LoginFragmentDirections.actionLoginFragmentToWelcomeFragment(username);
+                Navigation.findNavController(getActivity(), R.id.fragment_container).navigate(loginAction);
             }
         });
 
