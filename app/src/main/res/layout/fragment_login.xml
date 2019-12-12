@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment"
+    tools:context=".LoginTrialFragment"
     android:background="@color/white"
     android:orientation="vertical"
     android:gravity="center"
@@ -36,22 +36,6 @@
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/password_textinputlayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="@dimen/activity_horizontal_margin"-->
-<!--        android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
-<!--        app:passwordToggleEnabled="true">-->
-
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:id="@+id/password_editxt"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/password"-->
-<!--            android:padding="@dimen/text_padding"-->
-<!--            android:inputType="textPassword"/>-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
     <Button
         android:id="@+id/login_btn"

@@ -28,4 +28,4 @@ class WelcomeFragment : Fragment() {
         return rootView
     }
 
-}// Required empty public constructor
+}
