@@ -29,10 +29,15 @@ class LoginFragment : Fragment() {
             //then navigate to the home screen
             val name = usernameEditTxtview.text.toString()
             if (name.isNotEmpty()){
-                //Sending data  using Bundle
-                val bundle = Bundle()
-                bundle.putString("name", name)
-                findNavController().navigate(R.id.action_loginFragment_to_mainFragment, bundle)
+                //Passing data between destinations using Bundle
+//                val bundle = Bundle()
+//                bundle.putString("name", name)
+//                findNavController().navigate(R.id.action_loginFragment_to_mainFragment, bundle)
+
+                //passind data between destinations safely using safe args
+                val action = LoginFragmentDirections.actionLoginFragmentToMainFragment(name)
+                findNavController().navigate(action)
+
             }
 
         }
