@@ -26,6 +26,9 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="what_s_your_name">What\'s your name?</string>
+    <string name="book_title">Book Title/Author</string>
+    <string name="downloads">Downloads</string>
+    <string name="no_downloads">No Downloads</string>
 
 
 </resources>

@@ -11,18 +11,8 @@
         android:label="@string/home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/booksFragment"
-        android:name="com.beatrice.bookfinder.BooksFragment"
-        android:label="@string/books_author"
-        tools:layout="@layout/fragment_books" />
-    <fragment
-        android:id="@+id/seriesFragment"
-        android:name="com.beatrice.bookfinder.SeriesFragment"
-        android:label="@string/series_author"
-        tools:layout="@layout/fragment_series" />
-    <fragment
-        android:id="@+id/authorFragment"
-        android:name="com.beatrice.bookfinder.AuthorFragment"
-        android:label="@string/author"
-        tools:layout="@layout/fragment_author" />
+        android:id="@+id/downloadsFragment"
+        android:name="com.beatrice.bookfinder.DownloadsFragment"
+        android:label="@string/downloads"
+        tools:layout="@layout/fragment_downloads" />
 </navigation>

@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BooksFragment">
+    tools:context=".DownloadsFragment">
+
 
     <TextView
-        android:id="@+id/msg_txtview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Add search bar to search books by an author"
+        android:text="@string/no_downloads"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:gravity="center"/>
-
 
 </FrameLayout>

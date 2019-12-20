@@ -8,7 +8,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 
 
 /**
@@ -17,12 +18,29 @@ import android.widget.TextView
 class HomeFragment : Fragment() {
 
 
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
+
+        val rootView = inflater.inflate(R.layout.fragment_home, container, false)
+        val bookSearchView = rootView.findViewById<SearchView>(R.id.book_searchView)
+        bookSearchView.isSubmitButtonEnabled
+        bookSearchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                Toast.makeText(activity,query,Toast.LENGTH_LONG).show()
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                Toast.makeText(activity,newText,Toast.LENGTH_LONG).show()
+                return true
+            }
+
+        })
 
 
-        return inflater.inflate(R.layout.fragment_home, container, false)
+
+        return  rootView
     }
 
 }// Required empty public constructor

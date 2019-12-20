@@ -4,24 +4,11 @@
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/home"
-        app:showAsAction="ifRoom" />
+        android:title="@string/home"/>
     <item
-        android:id="@+id/booksFragment"
-        android:enabled="true"
-        android:icon="@drawable/ic_library_books"
-        android:title="Books"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/seriesFragment"
-        android:enabled="true"
-        android:icon="@drawable/ic_library_books"
-        android:title="Series"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/authorFragment"
-        android:enabled="true"
-        android:icon="@drawable/ic_author"
-        android:title="Author"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/downloadsFragment"
+        android:icon="@drawable/ic_file_download"
+        android:title="@string/downloads" />
+
+
 </menu>

@@ -7,6 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 /**
  * A simple [Fragment] subclass.
@@ -18,15 +22,36 @@ class MainFragment : Fragment() {
         // Inflate the layout for this fragment
         val rootView =  inflater.inflate(R.layout.fragment_main, container, false)
 
-        val nameTextview = rootView.findViewById<TextView>(R.id.name_txtview_main)
+        val msgTextview = rootView.findViewById<TextView>(R.id.msg_txtview)
 
         //passing text using bundles
         //val name = arguments?.getString("name")
 
-        //passind data using safe args
+        //passing data using safe args
         //use fromBundles() method to retrieve the arguments
         val name = MainFragmentArgs.fromBundle(arguments!!).name
-        nameTextview.text = name
+        msgTextview.text ="welcome " +name
+
+
+        //navHost
+        val navHostFragment = childFragmentManager.findFragmentById(R.id.fragment_container_main) as NavHostFragment
+        //set up bottomNavigationView
+        rootView.findViewById<BottomNavigationView>(R.id.bottomNavigationView).setupWithNavController(
+                navController = navHostFragment.navController
+        )
+
+        //set up toolbar
+
+//        rootView.findViewById<Toolbar>(R.id.toolbar).setupWithNavController(
+//                navController = navHostFragment.navController
+//        )
+
+        //setting up toolbar using custom navigatedListener
+        val toolbar = rootView.findViewById<Toolbar>(R.id.toolbar)
+        navHostFragment.navController.addOnDestinationChangedListener { _, destination, _ ->
+            toolbar.title = destination.label
+        }
+
 
         return  rootView
     }
