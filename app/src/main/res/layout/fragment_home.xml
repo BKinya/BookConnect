@@ -15,7 +15,6 @@
         android:id="@+id/book_searchView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="16dp"
         app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"

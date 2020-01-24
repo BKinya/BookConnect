@@ -33,7 +33,7 @@ class MainFragment : Fragment() {
         msgTextview.text ="welcome " +name
 
 
-        //navHost
+        //navHostFragment
         val navHostFragment = childFragmentManager.findFragmentById(R.id.fragment_container_main) as NavHostFragment
         //set up bottomNavigationView
         rootView.findViewById<BottomNavigationView>(R.id.bottomNavigationView).setupWithNavController(
@@ -41,12 +41,11 @@ class MainFragment : Fragment() {
         )
 
         //set up toolbar
-
 //        rootView.findViewById<Toolbar>(R.id.toolbar).setupWithNavController(
 //                navController = navHostFragment.navController
 //        )
 
-        //setting up toolbar using custom navigatedListener
+//        //setting up toolbar using custom navigatedListener
         val toolbar = rootView.findViewById<Toolbar>(R.id.toolbar)
         navHostFragment.navController.addOnDestinationChangedListener { _, destination, _ ->
             toolbar.title = destination.label

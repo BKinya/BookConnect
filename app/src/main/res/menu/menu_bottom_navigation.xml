@@ -9,6 +9,4 @@
         android:id="@+id/downloadsFragment"
         android:icon="@drawable/ic_file_download"
         android:title="@string/downloads" />
-
-
 </menu>
